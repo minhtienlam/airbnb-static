@@ -2,7 +2,7 @@
   <% data.flats.each do |name, infos| %>
     <li>
       <% link_to "/flats/#{name}.html" do %>
-      <%= image_tag "#{infos.picture}", class: "avatar-large" %>
+      <%= image_tag "#{name}.jpg", class: "avatar-large" %>
       <h3><%= infos.owner_name.capitalize %></h3>
     </li>
   <% end %>
