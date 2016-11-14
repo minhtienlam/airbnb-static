@@ -5,13 +5,25 @@
 <% flat = data.flats[owner] %>
 
 <!-- Inject flat data in template -->
-<%= image_tag flat.owner_picture, class: "img-circle" %>
+<%= image_tag flat.owner_picture, class: "avatar-large" %>
 <p><%= flat.owner_name %></p>
 <h1><%= flat.description %></h1>
 <p><%= flat.city %></p>
 <p><%= flat.summary %></p>
-<p><%= flat.wifi %></p>
-<p><%= flat.flat_rating %></p>
+<% if flat.wifi %>
+<p>yes</p>
+<% else %>
+<p>no</p>
+<% end %>
+
+<% flat.flat_rating.times do %>
+<i class="fa fa-star yellowstar"></i>
+<% end %>
+<% (5-flat.flat_rating).times do %>
+<i class="fa fa-star"></i>
+<% end %>
 <p><%= flat.maximumnumber_of_guests %></p>
+
+
 
 <%= image_tag flat.picture %>
