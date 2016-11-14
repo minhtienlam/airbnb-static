@@ -1,10 +1,11 @@
 <ul class="list-inline text-center small-padding deco-none">
-  <% ["anne", "seb", "romain"].each do |member| %>
+  <% data.flats.each do |name, infos| %>
     <li>
-      <% link_to 'http://google.com' do %>
-      <%= image_tag "#{member}.jpg", class: "avatar-large" %>
-      <h3><%= member.capitalize %></h3>
+      <% link_to "/flats/#{name}.html" do %>
+      <%= image_tag "#{infos.picture}", class: "avatar-large" %>
+      <h3><%= infos.owner_name.capitalize %></h3>
     </li>
   <% end %>
   <% end %>
 </ul>
+
