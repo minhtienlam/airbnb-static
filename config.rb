@@ -35,6 +35,10 @@ activate :autoprefixer
 # Helpers
 ###
 
+data.flats.each do |name, infos|
+  proxy "/flats/#{name}.html", "/flats/show.html", :locals => { :owner => name }, :ignore => true
+end
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 

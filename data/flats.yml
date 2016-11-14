@@ -1,0 +1,34 @@
+seb:
+  owner_name: Sebastien Saunier
+  picture: http://placehold.it/150x150
+  owner_picture: http://placehold.it/150x150
+  name: Seb's home
+  summary: Charming room in Montmartre
+  city: Paris, France
+  wifi: true
+  flat_rating: 3
+  maximum_number_of_guests: 3
+
+romain:
+  owner_name: Romain Paillard
+  picture: http://placehold.it/150x150
+  owner_picture: http://placehold.it/150x150
+  name: Romain's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  wifi: false
+  flat_rating: 3
+  maximum_number_of_guests: 2
+
+
+phan:
+  owner_name: Phan Noko
+  picture: http://placehold.it/150x150
+  owner_picture: http://placehold.it/150x150
+  name: Phan's home
+  summary: Nice flat in Taiwan
+  city: Taiwan, TW
+  wifi: True
+  flat_rating: 5
+  maximum_number_of_guests: 30
+
